@@ -1,0 +1,15 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+<h1>500 - INTERNAL SERVICE ERROR</h1>
+<p> Oops! Something broke!<code>{{ error }}</code></p>
+
+
+<a href="javascript:history.go(-1)"><button type="button" class="btn btn-warning">GO AWAY!!!</button></a>
+
+<div id="background">
+<img class = "fixed-bottom"src="https://68.media.tumblr.com/0d29a110bbd89fface87d17f6dade085/tumblr_oof0gkLGUY1wnofxjo1_500.gif" width="30%">
+</div>
+
+{% endblock %}
