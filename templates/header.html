@@ -18,6 +18,16 @@
     <!-- Favicon Link -->
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108760228-1"> </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108760228-1');
+    </script>
+    
     <script>
         //Modal initialization
         $('#myModal').on('shown.bs.modal', function () {

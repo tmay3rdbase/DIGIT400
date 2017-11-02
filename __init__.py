@@ -1,5 +1,6 @@
-from flask import Flask, render_template, flash, url_for, redirect, request, session
+from flask import Flask, render_template, flash, url_for, redirect, request, session, make_response
 from wtforms import Form, BooleanField, TextField, PasswordField, validators
+from datetime import datetime, timedelta
 from passlib.hash import sha256_crypt
 from MySQLdb import escape_string as thwart
 import gc
@@ -31,6 +32,16 @@ def main():
 def dashboard():
     return render_template("dashboard.html", APP_CONTENT = APP_CONTENT)
 
+@app.route("/introduction-to-app/")
+# @login_required
+def intro_to_app():
+    try:
+        output = ['Digit 400 is good', 'Python, java, php, \C++', '<p><strong>Hello World!<strong><p>', 42,'42']
+        
+        return render_template("templating_demo.html", output = output)
+    
+    except Exception as e:
+        return(str(e))
 @app.route('/login/', methods=["GET","POST"])
 def login_page():
     error = ''
@@ -117,6 +128,26 @@ def logout():
 @app.route("/updates/", methods=["GET","POST"])
 def updates():
     return render_template("updates.html", APP_CONTENT = APP_CONTENT)
+@app.route("/sitemap.xml/", methods=["GET","POST"])
+def sitemap():
+    try:
+        pages = []
+        week = (datetime.now() - timedelta(days = 7)).date().isoformat()
+        for rule in app.url_map.iter_rules():
+            if "GET" in rule.methods and len(rule.arguments)==0:
+                pages.append(
+                    ["http://138.197.95.77"+str(rule.rule),week]
+                )
+        sitemap_xml = render_template('sitemap_template.xml', pages = pages)
+        response = make_response(sitemap_xml)
+        response.headers["Content-Type"] = "application/xml"
+        return response
+    except Exception as e:
+        return(str(e))
+@app.route('/robots.txt/')
+def robots():
+    #return("User-agent: *\nDisallow /") #Disallows all robot traffic
+    return("User-agent: *\nDisallow: /register/\nDisallow: /login/") #Disallows robot traffic to sensitive urls
     
 @app.errorhandler(404)
 def page_not_found(e):
