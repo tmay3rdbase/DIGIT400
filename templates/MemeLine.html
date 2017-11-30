@@ -1,0 +1,397 @@
+{% extends "navbar.html" %}
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/memeStyle.css">
+</head>
+{% block body %}
+
+      <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 class="text-center bounceIn">What's a Meme?</h3>
+        <div class="container text-center">
+      <p>
+          <i>A meme is an image, video, or piece of text that is copied and often modified and virally spread.</i>
+      </p>
+        <p>
+            This site will focus on "Internet Memes" and how they came about. The timeline below displays an iconic meme from the year at which it shows. The dates are the time when the images were "invented". This date is when the world first got a glimpse of them. There is no out date when it comes to memes and they are still widely used today for come-back lines or fun overall. Click on the image or find the year from the dropdown to view more memes from that year!
+        </p>
+        </div>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/dancing_baby.gif') }}" style = "padding-top: .5em;" alt="Dancing Baby">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">1996</h4>
+              <h4 class="subheading">Baby Cha Cha</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/FIRST.png') }}" style = "padding-top: .75em;" alt="First YT Comment">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">1997</h4>
+              <h4 class="subheading">FIRST!</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/Hampster_Dance.gif') }}" style = "padding-top: .75em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">1998</h4>
+              <h4 class="subheading">Hamster Dance</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/everyTime.jpg') }}" style = "padding-top: .25em; height: 10em; padding-left: 1em" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">1999</h4>
+              <h4 class="subheading">Everytime you masturbate, God kills a kitten.</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+           <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/pancake_rabbit.jpg') }}" style = "padding-top: 1.25em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2000</h4>
+              <h4 class="subheading">Oolong Pancake Rabbit</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/pbj_time.gif') }}" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2001</h4>
+              <h4 class="subheading">Peanut Butter Jelly Time</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/lightSaber.gif') }}" style = "padding-top: 1.2em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2002</h4>
+              <h4 class="subheading">Light Saber Kid</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/fail.jpg') }}" style = "padding-top: .75em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2003</h4>
+              <h4 class="subheading">FAIL</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/Chuck.jpg') }}" style = "padding-top: .25em; height: 10em; padding-left: 1.2em" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2004</h4>
+              <h4 class="subheading">Chuck Norris</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/CrazyFrog.gif') }}" style = "padding-top: 1.25em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2005</h4>
+              <h4 class="subheading">Crazy Frog</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/diabeetus.jpg') }}" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2006</h4>
+              <h4 class="subheading">Diabeetus</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/Rick_roll.gif') }}" style = "padding-top: 1.25em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2007</h4>
+              <h4 class="subheading">Rick Rolled</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/trollFace.png') }}" style = "padding-top: .75em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2008</h4>
+              <h4 class="subheading">Troll Face</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/keyboardCat.gif') }}" style = "padding-top: 1.2em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2009</h4>
+              <h4 class="subheading">Keyboard Cat</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/Hoax.jpg') }}" style = "padding-top: 1.2em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2010</h4>
+              <h4 class="subheading">Death Hoaxes</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/wonka.jpg') }}" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2011</h4>
+              <h4 class="subheading">Condescending Wonka</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/badLuck.jpg') }}" style = "padding-top: .25em; height: 10em; padding-left: 1em" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2012</h4>
+              <h4 class="subheading">Bad Luck Brian</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/Grumpy.jpg') }}" style = "padding-top: .25em; height: 10em; padding-left: 1em" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2013</h4>
+              <h4 class="subheading">Grumpy Cat</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/kermit.jpg') }}" style = "padding-top: .25em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2014</h4>
+              <h4 class="subheading">Kermit</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li class="timeline-inverted">
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/lying.gif') }}" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2015</h4>
+              <h4 class="subheading">Why you always lying</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+          <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/primitiveSponge.jpg') }}" style = "padding-top: .2em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2016</h4>
+              <h4 class="subheading">Primitive Spongebob</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </li>
+        <li>
+          <div class="timeline-image">
+            <img class="img-template img-fluid" src="{{ url_for('static', filename='images/memes/Mocking.png') }}" style = "padding-top: .5em;" alt="">
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="bounceIn">2017</h4>
+              <h4 class="subheading">Mocking Spongebob</h4>
+            </div>
+            <div class="timeline-body">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
