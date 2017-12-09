@@ -1,5 +1,23 @@
 {% extends "navbar.html" %}
 
 {% block body %}
-<p> Hi there!</p>
+
+<div class = "aboutIMG">
+    <img class="img-fluid" src="{{url_for('static', filename='images/Me.png')}}" style="padding-top: 1.3em;">
+</div>
+
+<p style="text-indent: 50px; font-size: 110%;">Hello! My name is Taylor May and I am the developer of this website for my class called DIGIT 400 at Penn State Erie, The Behrend College. I wanted to thank you for visiting it whether it has been for business or pleasure.</p>
+<br>
+<p style="text-indent: 50px;">This is a semester project that focuses on memes and the years in which they were made. This is meant to be a more layed back site, which draws its inspiration from knowyourmeme and memebase. I wanted to create a site that was simple, easy to use, gave knowledge, and above all, a bit comedic. *Although, there is no actual text in the timeline or pages as of now, there will be by the time of this sites completion. *</p>
+
+<p style="text-indent: 50px;">In the Navigation Bar <i>(navbar)</i> at the top of the site, you will notice the tabs. The home tab is followed by a series of four tabs, which each have a different functionality. The first of these is the <i>“Search Memes”</i> tab, which will take you to a page where you can utilize the search bar to find a meme based on the keyword you enter. Once you enter the keyword, the image will be displayed in the center of the page. The next tab on the navbar is the <i>“Pages”</i> tab which when clicked triggers a dropdown scrollable window of the various years in the timeline. On these pages is where the meme and others from that year will be discussed. In addition, a little insight about what was going on at that point of time will be clarified as well. The third tab on the navbar is the <i>“Updates”</i> tab. When you visit this page, you will notice a dropdown menu of updates that have occurred through the site. This will allow you to see how actively the site is being updated. The final tab on the navbar is the <i>“About”</i> tab. I do not think I have to explain what this one does because you are already here.</p>
+
+<p style="text-indent: 50px;">The final tool in the site is the <i>“Top”</i> button, which is visible as soon as the user scrolls. This returns them to the top of the page on <b>click</b>.</p>
+
+<p style="text-indent: 50px;">The colors the site has been centered around have been black, which gives the feeling of simple, clean and sleekness to the site, and teal, which evokes a calm and creative feeling. This is to make the user feel comfortable and have fun utilizing this site!</p>
+
+<p style="text-indent: 50px;"><i>Timeline snippet was acquired through bootsnipp from the user “andrewnite”. This model was redone to fit the colors and shapes of my individual needs.</i></p>
+
+<p style="text-indent: 50px;"><i>The way the page searches for the images it provides is by utilizing the python libraries Beautiful Soup as well as Requests. These libraries fetch the information you provide and bring them back.</i></p>
+
 {% endblock %}

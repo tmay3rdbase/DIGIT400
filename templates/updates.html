@@ -1,7 +1,9 @@
 {% extends "navbar.html" %}
 
 {% block body %}
+<h2 style="padding-top: 25px;">MemeLine Updates</h2>
 <!-- Collapsable updates -->
+<div class="adjustAcc">
 <div id="accordion" role="tablist">
   <div class="card">
     <div class="card-header" role="tab" id="headingOne">
@@ -11,7 +13,6 @@
         </a>
       </h5>
     </div>
-
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
         Added a new page for updates as well as this nice collapsable list for them!
@@ -46,5 +47,6 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 {% endblock %}

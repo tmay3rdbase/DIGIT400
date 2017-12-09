@@ -37,6 +37,16 @@
           body{
               padding-top: 4em;
           }
+          #searchBar{
+              position: absolute;
+              right:4em;
+              margin: auto;
+          }
+          #searchButton{
+              position: absolute;
+              right:2em;
+              margin: auto;
+          }
       </style>
       
       <script>
@@ -63,8 +73,8 @@ function goToTop() {
       <nav class="navbar navbar-inverse bg-inverse navbar-expand-lg fixed-top" style="background-color: #494949;">
           <div class="container">
               
-        <a class="navbar-brand" href="#">
-    <img src="{{ url_for('static', filename='images/memes/MemeLine.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand" href="/">
+    <img src="{{ url_for('static', filename='images/memes/MemeLine.png') }}" width="30" height="30" class="d-inline-block align-top" alt="" href="/">
     MemeLine
         </a>
         <button class="navbar-toggle navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#14E7CD">
@@ -76,7 +86,7 @@ function goToTop() {
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/randomize/">Random</a>
+                    <a class="nav-link" href="/search/">Search Memes</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
@@ -95,11 +105,11 @@ function goToTop() {
                 <li class="nav-item">
                     <a class="nav-link" href="/about/">About</a>
                 </li>
-                <li id="searchBar">
-                    <form class="form-inline my-2 my-lg-0 pull-left" style="padding-right: 20px; padding-left: 20px;" method="get" action="https://www.google.com/search" target="_blank">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" name="q" value="" aria-label="Search">
+                <!---<li id = "searchBar">
+                    <form class="form-inline my-2 my-lg-0 pull-left" style="padding-right: 20px; padding-left: 20px;" method="get" action="#" target="_blank">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" name="q" value="{{request.form.search}}" aria-label="Search">
                         <button class="btn my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    </form>-->
                 </li>
             </ul>
         </div>

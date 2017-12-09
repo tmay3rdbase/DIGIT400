@@ -16,6 +16,51 @@ h3{
 .searchBar{
     padding-left: 20px;
 }
+.imageBox{
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 250px;
+    height:250px;
+    background-color: #14E7CD;
+    display: inline-block;
+}
+.imageRight{
+    float: right;
+    width: 250px;
+    height: 250px;
+    background-color: #14E7CD;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h2{
+    color: #14E7CD;
+    text-align: center;
+}
+.searchStuff{
+    align-content: center;
+}
+.adjustAcc{
+    padding-top: 25px;
+    align-content: auto;
+}
+
+.aboutIMG{
+    width: 300px;
+    height: 300px;
+    background-color: #14E7CD;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.indenting{
+    text-indent: 50px;
+}
+
+
+img{
+    display: inline-block;
+}
 /*.navbar ul {
    list-style: none;
    text-align: center;
@@ -120,7 +165,7 @@ h3{
 }
 
 #button:hover {
-    background-color: black; /* Add a dark-grey background on hover */
+    background-color: black; /* Add a black background on hover */
     color: #14E7CD;
 }
 

@@ -1,0 +1,26 @@
+{% extends "navbar.html" %}
+{% block body %}
+
+<div class="container">
+    <br>
+      <h2 id="searchTitle">Search For Meme!</h2>
+      <br>
+    <p><bold>No need to include the word <i>"meme"</i> just think of a word and Search!</bold></p>
+    <div class="container" id = "searchStuff">
+      <form action="#" class="form-inline" method="post">
+
+        <input type="text" class="form-control" placeholder="Enter Search!" name="search" value="{{request.form.search}}">
+          &nbsp;
+        <input class="btn btn-primary" type="submit" value="Find It!">
+
+      </form>
+    </div>
+      <br>
+    
+    
+    <div class = "container" style = "height: 200px; width: 200px">
+      {{codeStuff[0]|safe}}
+    </div>
+  </div>
+
+{% endblock %}

@@ -9,6 +9,8 @@ from functools import wraps
 from content_management import Content
 from db_connect import connection
 from pages import dates
+from search import search
+
 
 APP_CONTENT = Content()
 PAGE_CONTENT = dates()
@@ -49,13 +51,13 @@ def uppercase():
         return str as e
     '''
     
+@app.route("/navbar/", methods=["GET","POST"])
+def navbar():
+    return render_template("navbar.html", PAGE_CONTENT = PAGE_CONTENT)    
+
 @app.route("/", methods=["GET","POST"])
 def main():
 	return render_template("MemeLine.html", PAGE_CONTENT = PAGE_CONTENT)
-
-@app.route("/navbar/", methods=["GET","POST"])
-def navbar():
-    return render_template("navbar.html", PAGE_CONTENT = PAGE_CONTENT)
 
 @app.route("/about/", methods=["GET","POST"])
 def about():
@@ -198,6 +200,21 @@ def login_page():
         #flash(e)
         error = "Invalid credentials, try again."
         return render_template("login.html", error = error)
+    
+    
+@app.route('/search/', methods=['GET', 'POST'])
+def searching():
+    try:
+        codeStuff = ''
+        if request.method == "POST":
+            stuff = request.form['search']
+            codeStuff = search(stuff)
+
+            return render_template("search.html", codeStuff = codeStuff,  PAGE_CONTENT = PAGE_CONTENT)
+
+        return render_template("search.html", codeStuff = codeStuff,  PAGE_CONTENT = PAGE_CONTENT)
+    except Exception as e:
+        return str(e)
 
 '''@app.route('/uploads/', methods=['GET', 'POST'])
 #@login_required
@@ -306,7 +323,7 @@ def logout():
 
 @app.route("/updates/", methods=["GET","POST"])
 def updates():
-    return render_template("updates.html", APP_CONTENT = APP_CONTENT)
+    return render_template("updates.html", PAGE_CONTENT = PAGE_CONTENT)
 
 @app.route("/sitemap.xml/", methods=["GET","POST"])
 def sitemap():
