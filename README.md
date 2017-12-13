@@ -4,6 +4,26 @@
 
 This is a prototype site about memes made by **Taylor May** a student at [Penn State Behrend](http://behrend.psu.edu/).
 
+The Motivation for this site came from my desire to make a more simple site than [knowyourmeme](http://knowyourmeme.com/) and [memebase](http://memebase.cheezburger.com/).
+
+## Site Functionality
+
+The site is a vertical timeline that allows first tells the user what a meme is. 
+
+It then goes on to show the most popular meme for each time period from 1996 to 2017. 
+
+As you scroll down the page there will be a **"TOP"** button that appears on the bottom right side of the page that returns the user to the top of the site.
+
+The Navbar is fixed to the top of the page and displays each page upon **Click**.
+
+The ***SEARCH MEMES*** tab takes the user to a page where they search a keyword and it displays a thumbnail image of a meme to them.
+
+The ***PAGES*** tab is a dropdown menu that shows each date to take you to the page that will expand on each year.
+
+The ***UPDATES*** page will display updates that happen to the site.
+
+The ***ABOUT*** page is the last page that will also explain the site and me as the creator.
+
 ## Libraries Used!
 
 On the site memeline.win there are two main python libraries used in `search.py`:
