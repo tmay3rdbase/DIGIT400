@@ -63,19 +63,19 @@ def main():
 def about():
 	return render_template("about.html", PAGE_CONTENT = PAGE_CONTENT)
 
-@app.route("/1996/", methods=["GET","POST"])
-def ninetySix():
-	return render_template("1996.html", PAGE_CONTENT = PAGE_CONTENT)
+@app.route("/Beginning/", methods=["GET","POST"])
+def Beginning():
+	return render_template("Beginning.html", PAGE_CONTENT = PAGE_CONTENT)
 
-@app.route("/1997/", methods=["GET","POST"])
-def ninetySeven():
-	return render_template("1997.html", PAGE_CONTENT = PAGE_CONTENT)
+@app.route("/Development/", methods=["GET","POST"])
+def Development():
+	return render_template("Development.html", PAGE_CONTENT = PAGE_CONTENT)
 
-@app.route("/1998/", methods=["GET","POST"])
-def ninetyEight():
-	return render_template("1998.html", PAGE_CONTENT = PAGE_CONTENT)
+@app.route("/Psychological/", methods=["GET","POST"])
+def Psychological():
+	return render_template("Psychological.html", PAGE_CONTENT = PAGE_CONTENT)
 
-@app.route("/1999/", methods=["GET","POST"])
+'''@app.route("/1999/", methods=["GET","POST"])
 def ninetyNine():
 	return render_template("1999.html", PAGE_CONTENT = PAGE_CONTENT)
 
@@ -149,7 +149,7 @@ def twoThousandSixteen():
 
 @app.route("/2017/", methods=["GET","POST"])
 def twoThousandSeventeen():
-	return render_template("2017.html", PAGE_CONTENT = PAGE_CONTENT)
+	return render_template("2017.html", PAGE_CONTENT = PAGE_CONTENT)'''
 
 @app.route("/randomize/", methods=["GET","POST"])
 def randomIMG():

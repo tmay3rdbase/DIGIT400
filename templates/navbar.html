@@ -89,7 +89,7 @@ function goToTop() {
                     <a class="nav-link" href="/search/">Search Memes</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Topics</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"style="background-color:#494949;">
                         <!-- AUTO-POPULATE?-->
                         {% for i in PAGE_CONTENT["Pages"] %}
@@ -109,14 +109,14 @@ function goToTop() {
                     <form class="form-inline my-2 my-lg-0 pull-left" style="padding-right: 20px; padding-left: 20px;" method="get" action="#" target="_blank">
                         <input class="form-control mr-sm-2" type="text" placeholder="Search" name="q" value="{{request.form.search}}" aria-label="Search">
                         <button class="btn my-2 my-sm-0" type="submit">Search</button>
-                    </form>-->
-                </li>
+                    </form>
+                </li>-->
             </ul>
         </div>
           </div>
       </nav>
     </header>
-  <body>
+  <body style="width: 95%">
       <div class="container">
       {% block body %}
         

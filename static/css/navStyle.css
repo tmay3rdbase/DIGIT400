@@ -9,10 +9,10 @@ h3{
     color: #14E7CD;
 }
 /* for IOS users*/
-.dropdown-menu{
+/*.dropdown-menu{
     height: 50px;
     overflow: auto;
-}
+}*/
 .searchBar{
     padding-left: 20px;
 }
