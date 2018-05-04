@@ -16,10 +16,20 @@
       </form>
     </div>
       <br>
-    
-    
-    <div class = "container" style = "height: 200px; width: 200px">
-      {{codeStuff[0]|safe}}
+
+    {% for x in linkStuff %}
+        <h1><a href="{{x|safe}}">link</a></h1>
+    {% endfor %}
+
+
+    <div class = "container">
+        <div class="row">
+        {% for i in codeStuff %}
+            <div class = "col-sm">
+                {{i|safe}}
+            </div>
+        {% endfor %}
+        </div>
     </div>
   </div>
 

@@ -9,7 +9,7 @@ from functools import wraps
 from content_management import Content
 from db_connect import connection
 from pages import dates
-from search import search
+from search import search, link
 
 
 APP_CONTENT = Content()
@@ -74,6 +74,10 @@ def Development():
 @app.route("/Psychological/", methods=["GET","POST"])
 def Psychological():
 	return render_template("Psychological.html", PAGE_CONTENT = PAGE_CONTENT)
+
+@app.route("/futureTrends/", methods=["GET","POST"])
+def futureTrends():
+	return render_template("future.html", PAGE_CONTENT = PAGE_CONTENT)
 
 '''@app.route("/1999/", methods=["GET","POST"])
 def ninetyNine():
@@ -206,13 +210,15 @@ def login_page():
 def searching():
     try:
         codeStuff = ''
+        linkStuff = ''
         if request.method == "POST":
             stuff = request.form['search']
             codeStuff = search(stuff)
+            linkStuff = link(stuff)
 
-            return render_template("search.html", codeStuff = codeStuff,  PAGE_CONTENT = PAGE_CONTENT)
+            return render_template("search.html", codeStuff = codeStuff, linkStuff = linkStuff,  PAGE_CONTENT = PAGE_CONTENT)
 
-        return render_template("search.html", codeStuff = codeStuff,  PAGE_CONTENT = PAGE_CONTENT)
+        return render_template("search.html", codeStuff = codeStuff, linkStuff = linkStuff, PAGE_CONTENT = PAGE_CONTENT)
     except Exception as e:
         return str(e)
 
