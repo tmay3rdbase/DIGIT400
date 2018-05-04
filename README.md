@@ -2,7 +2,7 @@
 ## Penn State Behrend
 ### Digital Media, Arts, and Technology
 
-This is a prototype site about memes made by **Taylor May** a student at [Penn State Behrend](http://behrend.psu.edu/).
+This is a scholarly site about memes made by **Taylor May** a student at [Penn State Behrend](http://behrend.psu.edu/).
 
 The Motivation for this site came from my desire to make a more simple site than [knowyourmeme](http://knowyourmeme.com/) and [memebase](http://memebase.cheezburger.com/).
 
@@ -18,7 +18,7 @@ The Navbar is fixed to the top of the page and displays each page upon **Click**
 
 The ***SEARCH MEMES*** tab takes the user to a page where they search a keyword and it displays a thumbnail image of a meme to them.
 
-The ***PAGES*** tab is a dropdown menu that shows each date to take you to the page that will expand on each year.
+The ***TOPICS*** tab is a dropdown menu that shows each date to take you to the page that will expand on various scholarly pages.
 
 The ***UPDATES*** page will display updates that happen to the site.
 
